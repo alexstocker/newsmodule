@@ -72,7 +72,7 @@ class Newsmodule_Admin {
 	 * Add Plugin admin menu item
 	 */
 	public function add_plugin_admin_menu() {
-		add_menu_page( 'Newmodule ShortCode setup', 'Newsmodul', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page')
+		add_options_page( 'Newmodule ShortCode setup', 'Newsmodul', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page')
 		);
 	}
 
