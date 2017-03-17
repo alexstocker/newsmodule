@@ -93,8 +93,8 @@ class Newsmodule_Admin {
 	 */
 	public function recentnews_buttons(){
 		if( current_user_can('edit_posts') &&  current_user_can('edit_pages') ) {
-			add_filter( 'mce_external_plugins', array($this, 'newsmodul_add_buttons' ));
-			add_filter( 'mce_buttons', array($this, 'newsmodul_register_buttons' ));
+			add_filter( 'mce_external_plugins', array($this, 'newsmodule_add_buttons' ));
+			add_filter( 'mce_buttons', array($this, 'newsmodule_register_buttons' ));
 		}
 	}
 
@@ -102,8 +102,8 @@ class Newsmodule_Admin {
 	 * @param $plugin_array
 	 * @return mixed
 	 */
-	public function newsmodul_add_buttons($plugin_array ) {
-		$plugin_array['newsmodul_button'] = plugins_url( 'js/newsmodul-admin.js', __FILE__ );
+	public function newsmodule_add_buttons($plugin_array ) {
+		$plugin_array['newsmodule_button'] = plugins_url( 'js/newsmodule-admin.js', __FILE__ );
 		return $plugin_array;
 	}
 
@@ -111,8 +111,8 @@ class Newsmodule_Admin {
 	 * @param $buttons
 	 * @return mixed
 	 */
-	public function newsmodul_register_buttons($buttons ) {
-		array_push( $buttons, 'newsmodul_button');
+	public function newsmodule_register_buttons($buttons ) {
+		array_push( $buttons, 'newsmodule_button');
 		return $buttons;
 	}
 

@@ -2,8 +2,8 @@
 	'use strict';
 
 	(function() {
-		tinymce.PluginManager.add('mynews_button', function( ed, url ) {
-			ed.addButton( 'mynews_button', {
+		tinymce.PluginManager.add('newsmodule_button', function( ed, url ) {
+			ed.addButton( 'newsmodule_button', {
 				//text: 'Add recent posts shortcode',
 				tooltip: 'Add Recent Posts shortcode',
 				image: tinymce.baseURL + '/skins/lightgray/img/anchor.gif',
