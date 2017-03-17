@@ -1,0 +1,35 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+@media screen and (max-width: 766px) {
+    ul.recentnews_ul {
+        columns: auto 1;
+        -webkit-columns: auto 1;
+        -moz-columns: auto 1;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    ul.recentnews_ul {
+        columns: auto 2;
+        -webkit-columns: auto 2;
+        -moz-columns: auto 2;
+    }
+}
+
+ul.recentnews_ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.recentnews_title {
+    display:block;
+}
+
+.recentnews_readmore {
+    display:block;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
